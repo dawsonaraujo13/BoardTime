@@ -4,6 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgradient"
     tools:context=".PlayersActivity">
 
+    <view
+        android:id="@+id/playerList"
+        class="androidx.appcompat.app.AlertController$RecycleListView"
+        android:layout_width="384dp"
+        android:layout_height="572dp"
+        app:layout_constraintBottom_toTopOf="@+id/add"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </view>
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="262dp"
+        android:layout_height="52dp"
+        android:background="@drawable/roundbuttonwhite"
+        android:hint="Enter name here..."
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/add"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/add"
+        app:layout_constraintTop_toTopOf="@+id/add"
+        app:layout_constraintVertical_bias="0.0">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="85dp"
+        android:layout_height="52dp"
+        android:layout_margin="20dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundbuttonaccent"
+        android:text="Add"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+    </Button>
 </androidx.constraintlayout.widget.ConstraintLayout>
